@@ -105,7 +105,7 @@ public class HistoryObjectFactory {
 		userName.setText("@" + user.getScreenName() + "に" + type + "されました");
 		textPanel.add(userName);
 		
-		String tweet = this.status.getText();
+		String tweet = this.status == null ? "" : this.status.getText();
 		JTextPane textArea = new JTextPane();
 		textArea.setContentType("text/html");
 		textArea.setEditable(false);
