@@ -12,7 +12,7 @@ public class HistoryPlugin extends JavatterPlugin {
 		HistoryView historyView = new HistoryView();
 		historyController.setModel(history);
 		history.setView(historyView);
-		this.addUserStreamTab("history", historyView);
+		this.addUserStreamTab("History", historyView);
 		this.addUserStreamListener(historyController);
 	}
 
