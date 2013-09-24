@@ -12,11 +12,9 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import javax.swing.BoxLayout;
-import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextPane;
-import javax.swing.JToggleButton;
 import javax.swing.event.HyperlinkEvent;
 import javax.swing.event.HyperlinkListener;
 
@@ -27,13 +25,6 @@ import twitter4j.Status;
 import twitter4j.User;
 
 public class HistoryObjectFactory {
-	/*
-	 * retweet, favorite, unfavorite => user, status
-	 * 
-	 * follow => user
-	 * 
-	 * ほいさほいさ
-	 */
 	
 	private User user;
 	private Status status;
@@ -154,29 +145,8 @@ public class HistoryObjectFactory {
 	}
 	
 	private JPanel createButtons(HistoryViewObserver view) {
-		//ButtonClickEventListener model = new ButtonClickEventListener(this.user, this.status, view);
 		JPanel panel = new JPanel();
 		panel.setLayout(new BoxLayout(panel, 2));
-		
-		/*
-		JButton rep = new JButton("リプ");
-		rep.addActionListener(model);
-		model.setHogeButton(rep);
-		panel.add(rep);
-		*/
-		/*
-		JToggleButton rt = new JToggleButton("RT");
-		rt.addActionListener(model);
-		model.setRtButton(rt);
-		rt.setEnabled(!s.isRetweetedByMe());
-		panel.add(rt);
-
-		JToggleButton fav = new JToggleButton("☆");
-		fav.addActionListener(model);
-		fav.setSelected(s.isFavorited());
-		model.setFavButton(fav);
-		panel.add(fav);
-		 */
 		
 		panel.setAlignmentX(0.0F);
 		panel.setAlignmentY(0.0F);
