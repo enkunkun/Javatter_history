@@ -1,6 +1,6 @@
 package net.enkun.javatter.history;
 
-import net.enkun.javatter.history.HistoryObjectFactory.EventType;
+import net.enkun.javatter.history.HistoryObject.EventType;
 import twitter4j.Status;
 import twitter4j.User;
 
