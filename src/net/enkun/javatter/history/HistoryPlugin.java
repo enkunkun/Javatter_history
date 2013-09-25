@@ -23,7 +23,7 @@ public class HistoryPlugin extends JavatterPlugin {
 
 	@Override
 	public String getVersion() {
-		return "1.0.0";
+		return "1.0.1";
 	}
 
 }
